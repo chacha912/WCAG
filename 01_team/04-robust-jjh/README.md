@@ -6,4 +6,4 @@
 
 | 지침                           |  링크   |
 | :------------------------------| :-----: |
-| 4.1 호환성 <br /> (Compatible) |  [:mag:](./01-compatible/README.md)  |
+| 4.1 호환성 <br /> `Compatible` |  [:mag:](./01-compatible/README.md)  |
