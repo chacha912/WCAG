@@ -434,7 +434,7 @@ WCAG 2.1 의 가이드라인(지침)을 하나씩 알아보고 관련 사례를 
 </details>
 
 <details>
-<summary><strong>3. 이해의 용이성 (Understandable) <a href="./03-readable-jjh/">📁</a></strong></summary>
+<summary><strong>3. 이해의 용이성 (Understandable) <a href="./03-understandable-jjh/">📁</a></strong></summary>
 
 <table>
       <thead>
@@ -450,7 +450,7 @@ WCAG 2.1 의 가이드라인(지침)을 하나씩 알아보고 관련 사례를 
       <tbody>
         <tr>
           <td rowspan="12">3.1<br />가독성<br />(Readable)</td>
-          <td rowspan="12"><a href="./03-readable-jjh/01-readable">📁</a></td>
+          <td rowspan="12"><a href="./03-understandable-jjh/01-readable">📁</a></td>
           <td>3.1.1</td>
           <td>Language of Page</td>
           <td>A</td>
@@ -490,7 +490,7 @@ WCAG 2.1 의 가이드라인(지침)을 하나씩 알아보고 관련 사례를 
       <tbody>
         <tr>
           <td rowspan="10">3.2<br />예측 가능성<br />(Predictable)</td>
-          <td rowspan="10"><a href="./03-readable-jjh/02-predictable">📁</a></td>
+          <td rowspan="10"><a href="./03-understandable-jjh/02-predictable">📁</a></td>
           <td>3.2.1</td>
           <td>On Focus</td>
           <td>A</td>
@@ -524,7 +524,7 @@ WCAG 2.1 의 가이드라인(지침)을 하나씩 알아보고 관련 사례를 
       <tbody>
         <tr>
           <td rowspan="12">3.3<br />입력 지원<br />(Input Assistance)</td>
-          <td rowspan="12"><a href="./03-readable-jjh/03-input-assistance">📁</a></td>
+          <td rowspan="12"><a href="./03-understandable-jjh/03-input-assistance">📁</a></td>
           <td>3.3.1</td>
           <td>Error Identification</td>
           <td>A</td>
