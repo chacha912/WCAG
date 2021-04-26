@@ -4,10 +4,10 @@
 
 ## 2.5.1 포인터 제스처 [A]
 
-멀티 포인트 또는 패스 기반 제스처(gesture)를 사용하는 모든 기능은 멀티 포인트 또는 패스 기반 제스처가 필수적인 경우가 아니면 패스 기반 제스처 없이 싱글 포인터로 작동 할 수 있어야 합니다. 이 지침은 필수적인 경우를 제외하고는 단 한 번의 터치 만으로 모든 기능을 사용할 수 있어야 함을 명시합니다. 즉, 확대/축소 및 스위핑과 같은 다중 포인터 또는 경로 기반 제스처를 제공할 경우 탭, 더블 탭 및 길게 누르는 것과 같은 단일 포인터로도 기능을 사용할 수 있어야 합니다.
+다중 포인터 또는 경로 기반 제스처(gesture)를 사용하는 모든 기능은 필수적인 경우가 아니면 경로 기반 제스처 없이 단일 포인터로 작동 할 수 있어야 합니다. 이 지침은 필수적인 경우를 제외하고는 단 한 번의 터치 만으로 모든 기능을 사용할 수 있어야 함을 명시합니다. 즉, 확대/축소(핀치 줌)과 같은 다중 포인터 또는 스와이프, 드래그와 같은 경로 기반 제스처를 제공할 경우 탭, 더블 탭 및 길게 누르는 것과 같은 단일 포인터로도 기능을 사용할 수 있어야 합니다.
 ![모바일 제스처](https://t1.daumcdn.net/cfile/tistory/2611613A5758E5B932)
 
-> 이 가이드라인은 포인터 작업을 해석하는 웹 콘텐츠에 적용됩니다. 사용자 에이전트(예: 브라우저)의 기본 제스처 또는 보조 기술을 작동하는데 필요한 작업에는 적용되지 않습니다)
+> 이 성공기준은 포인터 작업을 해석하는 웹 콘텐츠에 적용됩니다. 사용자 에이전트(예: 브라우저)의 기본 제스처 또는 보조 기술을 작동하는데 필요한 작업에는 적용되지 않습니다)
 
 ### 대상
 
@@ -24,21 +24,27 @@
 - [myalbum.com](https://myalbum.com/album/cc0cRaWhajJ2) 사이트에서 제공하는 사진앨범에서 사용자는 스위핑과 버튼, 키보드 화살표 키를 이용해 다음 사진으로 이동할 수 있습니다.
   ![myalbum 갤러리](https://uploads-ssl.webflow.com/5f492c66ad0319c4532859a6/5f4970d94bc827791c9e8429_5c12d504b3c79c27a8790a77_wcag21251_798x384.png)
 
-- [스마트 서울맵](https://map.seoul.go.kr/smgis2/smap/XkJBU0VNQVBfR0VOXlQ6MTFeRl5GXkZeXl5eXl4xMjYuOTc4NTc2XjM3LjU2NjUwMl42XjExMTAyODEyXmNpdHlMaWZlXl5eLg==) 사이트에서 확대, 축소 모드 변경을 싱글포인트로도 제어할 수 있습니다. 키보드의 화살표 키를 사용하여 지도 이동 또한 가능합니다.
+- [스마트 서울맵](https://map.seoul.go.kr/smgis2/smap/XkJBU0VNQVBfR0VOXlQ6MTFeRl5GXkZeXl5eXl4xMjYuOTc4NTc2XjM3LjU2NjUwMl42XjExMTAyODEyXmNpdHlMaWZlXl5eLg==) 사이트에서 확대, 축소를 핀치 줌대신 단일포인터로도 제어할 수 있습니다. 스와이프 대신 키보드의 화살표 키(↑↓←→)를 사용하여 지도 이동 또한 가능합니다.
   ![스마트 서울맵](./img/smart-seoul-map.png)
+
+- 경로기반 제스처(드래그) 대신 단일 포인터로도 증감(-,+) 조작이 가능한 슬라이드 인풋 예시입니다.
+  ![슬라이드 인풋](https://naradesign.github.io/img/wcag-21-251-3.png)
 
 ## 2.5.2 포인터 취소 [A]
 
 싱글 포인터를 사용하여 작동할 수 있는 기능의 경우 다음 중 하나 이상이 충족 되어야 합니다.
 
-- down 이벤트 비활성화(No Down-Event)
-  포인터의 down 이벤트는 함수 일부를 실행하는데 사용하지 않습니다.
+- down 이벤트 금지(No Down-Event)
+  포인터의 down 이벤트를 기능을 실행하는데 사용하지 않아야 합니다.
+  `onmousedown, ontouchstart` 이벤트에서 기능을 실행하지 않습니다.
 
 - 중단(Abort) 또는 실행 취소(Undo)
-  함수의 완료는 up 이벤트에 있고 완료 전에 함수를 중단하거나, 완료 후 함수를 실행 취소하는 방법을 제공합니다.
+  함수의 완료는 up 이벤트에서 적용하고, 완료 전에 함수를 중단하거나, 완료 후 함수를 실행 취소하는 방법을 제공합니다.
+  `onclick, onmouseup, ontouchend` 이벤트에서 기능을 완료합니다.
 
 - up 이벤트를 통한 취소(Reversal)
-  up 이벤트는 이전 down 이벤트의 결과를 뒤집을 수 있습니다.
+  up 이벤트는 앞서 실행한 down 이벤트의 결과를 되돌릴 수 있습니다.
+  `onmousedown, ontouchstart` 이벤트 결과는 `onmouseup, ontouchend` 이벤트로 되돌릴 수 있습니다.
 
 - down 이벤트를 필수적으로 작동해야 하는 경우는 예외
   피아노나 드럼연주 시뮬레이션, 두더지 게임 애플리케이션의 경우 down 이벤트를 통해 즉시 실행되어야 합니다.
@@ -58,6 +64,9 @@
   - 컨펌 메세지를 잘못 클릭했을 경우, 포인터를 움직여 버튼 밖에서 포인터를 놓으면 취소됩니다.
     [![기부금예시](./img/donation.JPG)](https://assets.knowbility.org/2021/blog/WCAG21-252-example.mp4)
 
+- 키보드로도 조작가능한 드래그 앤 드롭 예시입니다. tab 키를 통해 초점을 지정하고 space키를 누르면 메뉴를 이용할 수 있습니다.
+  [접근가능한 드래그 앤 드롭 예시](https://dev.opera.com/articles/accessible-drag-and-drop/example.html)
+
 ## 2.5.3 레이블과 접근 가능한 이름 [A]
 
 음성입력 사용자가 활성화할 컴포넌트를 식별할 수 있도록 컴포넌트에 접근 가능한 이름이 있어야 합니다. 접근 가능한 이름이 레이블 이름과 일치하지 않거나, 레이블 이름으로 시작하지 않을 경우 사용자는 혼란에 빠질 수 있습니다.
@@ -76,7 +85,10 @@
 - 제품을 선택하는 버튼 레이블이 "선택"으로만 주어질 경우, 음성 입력 사용자는 화면을 보고 "선택" 이라고 말하지만, 음성 소프트웨어는 해당 레이블을 접근 가능한 이름으로 인식하지 못합니다. 음성 소프트웨어가 식별 가능한 접근가능한 이름은 "iPhone Xs 선택" 입니다. 이 문제를 해결하려면 화면에 표시되는 레이블과 접근 가능한 이름을 동일하게 만들어야 합니다. 이를 수행할 수 없는 경우라면 접근 가능한 이름을 화면에 버튼과 함께 표시하여 사용자가 접근 가능한 이름을 올바르게 유추할 수 있도록 해야 합니다.
   ![제품선택 버튼 레이블](./img/iphone.JPG)
 
-## 2.5.4 동작(모션) 실행 [A]
+- 표시한 레이블과 구성요소의 이름이 일치하는 예시입니다.
+  ![레이블 성공 사례](./img/label.JPG)
+
+## 2.5.4 동작(모션)기반 작동 [A]
 
 장치를 움직이거나(예: 흔들림 또는 기울임) 장치를 향한 제스처에 의해 활성화되는 기능(카메라 같은 센서가 제스처를 포착하고 해석)은 일반적인 UI 구성 요소에 의해서도 작동할 수 있어야 합니다.
 
@@ -110,7 +122,12 @@
 
 - Shake 'em Dice 앱은 장치를 흔들면 주사위가 굴러가는 기능을 제공합니다. 2.5.4 기준을 만족하려면 탭을 했을 때도 주사위가 굴러가도록 구현해야 합니다.
   ![주사위 게임](https://uploads-ssl.webflow.com/5f492c66ad0319c4532859a6/5f4970d9f245988507cb40ef_5c12d56fb3c79c4f2b790a7a_wcag21254_800x439.png)
+
+- 페이스북은 모바일 장치를 회전하여 파노라마 사진을 보는 기능을 제공합니다. 좌우로 스와이프하는 방식으로도 사용가능합니다.
+  ![페이스북 파노라마 사진](https://naradesign.github.io/img/wcag-21-254-1.png)
+
 - 텍스트 입력 후, 장치를 흔들어 입력을 취소(shake to undo)하는 기능을 제공한다면 사용자가 동일한 기능을 버튼으로도 사용할 수 있도록 텍스트 상자 옆에 취소버튼을 제공해야 합니다.
+
 - 어플리케이션에서 장치를 기울여 다음 페이지 또는 이전 페이지로 이동할 수 있는 기능을 제공하는 경우, 동일한 기능을 수행할 수 있는 버튼도 제공해야 합니다.
 
 ## 2.5.5 실행 영역 [AAA]
@@ -144,7 +161,7 @@
 - 카카오 페이지 웹사이트의 캐러셀 인터페이스입니다. 내비게이션 컨트롤을 사용해 캐러셀 아이템을 탐색할 수 있습니다. 왼쪽은 컨트롤 크기가 10×16 CSS 픽셀로 2.5.5 기준을 한참 만족하지 못하고 오른쪽은 최근 페이지의 컨트롤 버튼으로 40x40 CSS 픽셀로 크기가 개선된 모습을 볼 수 있습니다.
   ![카카오 페이지 버튼](./img/kakao.JPG)
 
-- 모바일 사용자의 경우 버튼이 너무 작거나 촘촘하게 배치되어 있으면 누르고자 하는 버튼 외에 다른 버튼이 눌려져 어려움을 겪습니다. 44×44 CSS 픽셀 크기는 일반적으로 모바일 장치의 9mm 크기에 해당합니다. 이 크기는 대부분의 사람들이 손가락이나 다른 포인팅 장치를 사용하여 보고 터치할 수 있을 만큼 충분히 크며, Apple iOS UI 가이드라인에서도 제시되는 기준입니다.  
+- 모바일 사용자의 경우 버튼이 너무 작거나 촘촘하게 배치되어 있으면 누르고자 하는 버튼 외에 다른 버튼이 눌려져 어려움을 겪습니다. 44×44 CSS 픽셀 크기는 일반적으로 모바일 장치의 9mm 크기에 해당합니다. 이 크기는 대부분의 사람들이 손가락이나 다른 포인팅 장치를 사용하여 보고 터치할 수 있을 만큼 충분히 크며, Apple iOS UI 가이드라인에서도 제시되는 기준입니다.
   ![Apple 휴먼 인터페이스 가이드라인](https://user-images.githubusercontent.com/41986911/115980926-4a64db80-a5cb-11eb-874f-7af5172fe522.png)
 
 ## 2.5.6 동시 입력 메커니즘 [AAA]
@@ -157,6 +174,7 @@
 ### 대상
 
 - 여러 개의 기기를 사용하면서 화면전환, 키보드, 터치스크린 등 다양한 입력을 사용하는 사람
+- 음성입력 사용자
 
 ### 예시
 
@@ -170,6 +188,12 @@
   });
   ```
 
+  - 장치 독립 이벤트 핸들러(권장)
+    `onblur onchange onclick onfocus oninput onselect`
+
+  - 장치 종속 이벤트 핸들러(권장하지 않음)
+    `ondblclick onkeydown onkeypress onkeyup onmousedown onmouseenter onmouseleave onmousemove onmouseout onmouseover onmouseup touchstart touchend touchmove touchcancel`
+
 ## 참고 자료
 
 - [WCAG 2.1 Guidelines Explained with Examples](https://www.c2experience.com/blog/wcag-21-guidelines-explained-with-examples)
@@ -181,3 +205,4 @@
 - [Understanding Success Criterion 2.5.4](https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html)
 - [Understanding Success Criterion 2.5.5](https://www.w3.org/WAI/WCAG21/Understanding/target-size.html)
 - [Understanding Success Criterion 2.5.6](https://www.w3.org/WAI/WCAG21/Understanding/concurrent-input-mechanisms.html)
+- [WCAG 2.1 새로운 성공 기준 소개 - naradesign](https://naradesign.github.io/wcag-2.1.html)
