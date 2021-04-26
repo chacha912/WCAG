@@ -121,19 +121,19 @@ WCAG 2.1 의 가이드라인(지침)을 하나씩 알아보고 관련 사례를 
           <td>1.3.4</td>
           <td>Orientation</td>
           <td>AA</td>
-          <td>New✨</td>
+          <td>New✨<br>모바일</td>
         </tr>
         <tr>
           <td>1.3.5</td>
           <td>Identify Input Purpose</td>
           <td>AA</td>
-          <td>New✨</td>
+          <td>New✨<br>인지</td>
         </tr>
         <tr>
           <td>1.3.6</td>
           <td>Identify Purpose</td>
           <td>AAA</td>
-          <td>New✨</td>
+          <td>New✨<br>인지</td>
         </tr>
       </tbody>
       <tbody>
@@ -197,25 +197,25 @@ WCAG 2.1 의 가이드라인(지침)을 하나씩 알아보고 관련 사례를 
           <td>1.4.10</td>
           <td>Reflow</td>
           <td>AA</td>
-          <td>New✨</td>
+          <td>New✨<br>저시력</td>
         </tr>
         <tr>
           <td>1.4.11</td>
           <td>Non-text Contrast</td>
           <td>AA</td>
-          <td>New✨</td>
+          <td>New✨<br>저시력</td>
         </tr>
         <tr>
           <td>1.4.12</td>
           <td>Text Spacing</td>
           <td>AA</td>
-          <td>New✨</td>
+          <td>New✨<br>저시력</td>
         </tr>
         <tr>
           <td>1.4.13</td>
           <td>Content on Hover or Focus</td>
           <td>AA</td>
-          <td>New✨</td>
+          <td>New✨<br>저시력</td>
         </tr>
       </tbody>
     </table>
@@ -260,7 +260,7 @@ WCAG 2.1 의 가이드라인(지침)을 하나씩 알아보고 관련 사례를 
           <td>2.1.4</td>
           <td>Character Key Shortcuts</td>
           <td>A</td>
-          <td>New✨</td>
+          <td>New✨<br>모바일</td>
         </tr>
       </tbody>
       <tbody>
@@ -300,7 +300,7 @@ WCAG 2.1 의 가이드라인(지침)을 하나씩 알아보고 관련 사례를 
           <td>2.2.6</td>
           <td>Timeouts</td>
           <td>AAA</td>
-          <td>New✨</td>
+          <td>New✨<br>인지</td>
         </tr>
       </tbody>
       <tbody>
@@ -322,7 +322,7 @@ WCAG 2.1 의 가이드라인(지침)을 하나씩 알아보고 관련 사례를 
           <td>2.3.3</td>
           <td>Animation from Interactions</td>
           <td>AAA</td>
-          <td>New✨</td>
+          <td>New✨<br>인지</td>
         </tr>
       </tbody>
       <tbody>
@@ -396,37 +396,37 @@ WCAG 2.1 의 가이드라인(지침)을 하나씩 알아보고 관련 사례를 
           <td>2.5.1</td>
           <td>Pointer Gestures</td>
           <td>A</td>
-          <td>New✨</td>
+          <td>New✨<br>모바일</td>
         </tr>
         <tr>
           <td>2.5.2</td>
           <td>Pointer Cancellation</td>
           <td>A</td>
-          <td>New✨</td>
+          <td>New✨<br>모바일</td>
         </tr>
         <tr>
           <td>2.5.3</td>
           <td>Label in Name</td>
           <td>A</td>
-          <td>New✨</td>
+          <td>New✨<br>모바일</td>
         </tr>
         <tr>
           <td>2.5.4</td>
           <td>Motion Actuation</td>
           <td>A</td>
-          <td>New✨</td>
+          <td>New✨<br>모바일</td>
         </tr>
         <tr>
           <td>2.5.5</td>
           <td>Target Size</td>
           <td>AAA</td>
-          <td>New✨</td>
+          <td>New✨<br>모바일</td>
         </tr>
         <tr>
           <td>2.5.6</td>
           <td>Concurrent Input Mechanisms</td>
           <td>AAA</td>
-          <td>New✨</td>
+          <td>New✨<br>모바일</td>
         </tr>
       </tbody>
     </table>
@@ -565,7 +565,7 @@ WCAG 2.1 의 가이드라인(지침)을 하나씩 알아보고 관련 사례를 
 </details>
 
 <details>
-<summary><strong>4. 견고 (Robust)</strong></summary>
+<summary><strong>4. 견고 (Robust) <a href="./04-robust-jjh/">📁</a></strong></summary>
 
 <table>
       <thead>
@@ -597,7 +597,7 @@ WCAG 2.1 의 가이드라인(지침)을 하나씩 알아보고 관련 사례를 
           <td>4.1.3</td>
           <td>Status Messages</td>
           <td>AA</td>
-          <td>New✨</td>
+          <td>New✨<br>저시력</td>
         </tr>
         <tr>
       </tbody>
@@ -662,4 +662,5 @@ WCAG는 각 지침을 4가지 원칙의 범주로 분류하여 제공합니다.
 
 📚 참고자료
 
-- [a11y WCAG 2.1 깃북](https://a11y.gitbook.io/wcag/)
+- [a11y WCAG 2.1 gitbook](https://a11y.gitbook.io/wcag/)
+- [Welcome, WCAG 2.1](https://knowbility.org/blog/2018/WCAG21-intro/)
