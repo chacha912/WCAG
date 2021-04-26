@@ -44,7 +44,7 @@
   ![화려한 애니메이션](https://miro.medium.com/max/540/1*dkph4axQGLfPwIfI9K5hCg.gif)
   ![화려한 애니메이션](https://miro.medium.com/max/700/1*HFpNEQrptkmEHlVBs3kUXw.gif)
 
-- 애플 사이트에서 `prefers-reduced-motion` 을 설정하여 배경 영상 재생과 확대 효과가 해제되는 예시입니다.
+- 애플 사이트에서 `prefers-reduced-motion` 을 설정하여 배경 영상 재생과 확대 효과가 해제되는 예시입니다.  
   [모션을 위한 반응형 디자인 - example 1. 애플](https://webkit.org/blog/7551/responsive-design-for-motion/#using-reduce-motion-on-the-web)
   [애니메이션 동작 줄이기 미디어쿼리 사용 예시](https://webkit.org/blog-files/prefers-reduced-motion/prm.htm)
   [애니메이션 동작 줄이기 미디어쿼리 사용법 - nuli](https://nuli.navercorp.com/community/article/1132982)

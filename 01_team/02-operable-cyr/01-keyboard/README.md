@@ -48,6 +48,7 @@
 
 - 아래 그림에서는 마우스를 통해서만 그리기가 가능합니다. 마우스를 사용할 수 없는 사람은 접근할 수 없습니다.
   ![마우스 입력 그리기 가능](<https://www.ogcio.gov.hk/en/our_work/community/web_mobileapp_accessibility/promulgating_resources/handbook/appendix_1/images/13-2.1.3(1).jpg>)
+  <br>
   키보드로도 그리기 기능을 제공하며 어떻게 기능을 사용할 수 있는지 설명이 추가된 예시입니다.
   ![키보드 그리기 가능](<https://www.ogcio.gov.hk/en/our_work/community/web_mobileapp_accessibility/promulgating_resources/handbook/appendix_1/images/13-2.1.3(2).jpg>)
 
@@ -84,12 +85,10 @@
 ### 예시
 
 - 트위터에서 `James`를 입력하기 위해 말하는 순간, ‘j-a-m-e-s’ 키보드가 차례로 눌리고 ‘j, a, m, e, s’ 문자에 할당된 명령을 차례로 실행합니다. `j`와 `m`은 단축 키로 지정되어 있기 때문에 'es' 에게 메세지 보내는 창이 뜨는 결과를 보입니다. 즉, `j` 단축키로 한 항목 아래로 이동하고, `m` 단축키로 메세지 대화 상자를 열고 나머지 `es`가 받는 사람 칸에 입력된 것입니다.
-
-[트위터에서 "James"라고 음성 입력하자 J, M 문자 단축키가 작동하는 영상](https://www.youtube.com/watch?v=OPjfpDU9S08&t=2s)
+  [![트위터에서 "James"라고 음성 입력하자 J, M 문자 단축키가 작동하는 영상](https://img.youtube.com/vi/OPjfpDU9S08/sddefault.jpg)](https://www.youtube.com/watch?v=OPjfpDU9S08&t=2s)
 
 - NAVER 메일은 사용자 편의를 위해 몇 가지 단축키를 제공합니다. 예를 들어 R 키를 눌러 읽은 메일에 답장을 하거나, D 키를 눌러 메일을 삭제할 수 있습니다. 이 때, 단축키가 문자로만 이루어졌기 때문에 음성 입력 사용자에게 문제가 있을 수 있습니다. 즉 사용자가 하나 이상 문자 단축 키와 일치하는 단어를 말할 때 컨트롤에 포커스가 있으면 예기치 않은 동작이 발생합니다. 네이버에서는 단축키 기능을 켜거가 끌 수 있고, 단축키를 재설정할 수 있는 기능을 제공합니다.
-
-![네이버메일](./img/naver.png)
+  ![네이버메일](./img/naver.png)
 
 ## 참고 자료
 

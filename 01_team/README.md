@@ -15,7 +15,7 @@ W3C 웹 콘텐츠 접근성 지침 표준 권고안은 **장애가 있는 사용
 WCAG 2.1 의 가이드라인(지침)을 하나씩 알아보고 관련 사례를 정리했습니다. 각 지침에 대한 자세한 내용은 아래 표의 링크를 통해 확인할 수 있습니다.
 
 <details>
-<summary><strong>1. 인식 (Perceivable) <a href="./01-perceivable-kjw/">📁</a></strong></summary>
+<summary><strong>1. 인식의 용이성 (Perceivable) <a href="./01-perceivable-kjw/">📁</a></strong></summary>
 
 <table>
       <thead>
@@ -222,7 +222,7 @@ WCAG 2.1 의 가이드라인(지침)을 하나씩 알아보고 관련 사례를 
 
 </details>
 <details>
-<summary><strong>2. 운용 (Operable) <a href="./02-operable-cyr">📁</a></strong></summary>
+<summary><strong>2. 운용의 용이성 (Operable) <a href="./02-operable-cyr">📁</a></strong></summary>
 
 <table>
       <thead>
@@ -434,7 +434,7 @@ WCAG 2.1 의 가이드라인(지침)을 하나씩 알아보고 관련 사례를 
 </details>
 
 <details>
-<summary><strong>3. 이해 (Understandable) <a href="./03-readable-jjh/">📁</a></strong></summary>
+<summary><strong>3. 이해의 용이성 (Understandable) <a href="./03-readable-jjh/">📁</a></strong></summary>
 
 <table>
       <thead>
@@ -565,7 +565,7 @@ WCAG 2.1 의 가이드라인(지침)을 하나씩 알아보고 관련 사례를 
 </details>
 
 <details>
-<summary><strong>4. 견고 (Robust) <a href="./04-robust-jjh/">📁</a></strong></summary>
+<summary><strong>4. 견고성 (Robust) <a href="./04-robust-jjh/">📁</a></strong></summary>
 
 <table>
       <thead>
