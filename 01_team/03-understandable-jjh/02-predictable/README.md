@@ -16,7 +16,7 @@ UI 구성 요소가 포커스 상태가 되면, 맥락을 변경하지 않습니
 
 ### 예시
 - 구성 요소가 포커스를 받으면 도움말 대화 상자가 열렸지만, 포커스 상태 성공 기준을 적용하여 도움말을 읽도록 강요하지 않게 만들었습니다.<br />
-<img src="./img/on-focus-1.png" alt="홍콩사무국 포커스 상태 1" width="400px" /><img src="./img/on-focus-2.png" alt="홍콩사무국 포커스 상태 2" width="400px" />
+    <img src="./img/on-focus-1.png" alt="홍콩사무국 포커스 상태 1" width="400px" /><img src="./img/on-focus-2.png" alt="홍콩사무국 포커스 상태 2" width="400px" />
 
 
 ## 3.2.2 입력 상태 [A]
@@ -31,7 +31,7 @@ UI 구성 요소가 포커스 상태가 되면, 맥락을 변경하지 않습니
 ### 예시
 - 라디오 버튼 세트가 있는 양식 화면에서 버튼 클릭 시 항목의 일부만 변경되고 전체구조가 동일하게 유지되기 떄문에 기본 컨텍스트가 사용자에게 남아있습니다.
 - 드롭 다운 메뉴에서 맥락이 변경되면 양식이 자동으로 제출되었지만, 입력 상태 성공 기준 적용 후 사용자가 양식을 제출해야지만 변경되게 되었습니다.<br />
-<img src="./img/on-input-1.png" alt="홍콩사무국 입력 상태 1" width="400px" /><img src="./img/on-input-2.png" alt="홍콩사무국 입력 상태 2" width="400px" />
+    <img src="./img/on-input-1.png" alt="홍콩사무국 입력 상태 1" width="400px" /><img src="./img/on-input-2.png" alt="홍콩사무국 입력 상태 2" width="400px" />
 
 ## 3.2.3 일관된 네비게이션 [AA]
 웹 페이지 집합 내의 여러 웹 페이지에서 반복되는 네비게이션은 사용자가 변경하지 않는 한, 반복될 때마다 동일한 순서로 제시되어야 합니다.
@@ -45,8 +45,8 @@ UI 구성 요소가 포커스 상태가 되면, 맥락을 변경하지 않습니
 
 ### 예시
 - 대한항공 웹 페이지에서 상단의 네비게이션은 다른 페이지로 이동해도 변경되지 않습니다.<br />
-![대한항공 네비게이션바 1](./img/consistent-navigation-1.png)<br />
-![대한항공 네비게이션바 2](./img/consistent-navigation-2.png)<br />
+    ![대한항공 네비게이션바 1](./img/consistent-navigation-1.png)<br />
+    ![대한항공 네비게이션바 2](./img/consistent-navigation-2.png)<br />
 
 ## 3.2.4 일관된 식별 [AA]
 웹 페이지 집합 내에서 동일한 기능을 가진 구성 요소는 일관되게 구별되어야 됩니다.
@@ -64,8 +64,8 @@ UI 구성 요소가 포커스 상태가 되면, 맥락을 변경하지 않습니
 
 ### 예시
 - 홍콩 정부 CIO 사무국 웹 페이지 어디에서든 프린트 이미지를 클릭하면 해당 페이지를 출력할 수 있다.<br />
-![홍콩 정부 CIO 사무국-1](./img/consistent-identification.png)<br />
-![홍콩 정부 CIO 사무국-2](./img/consistent-identification-2.png)<br />
+    ![홍콩 정부 CIO 사무국-1](./img/consistent-identification.png)<br />
+    ![홍콩 정부 CIO 사무국-2](./img/consistent-identification-2.png)<br />
 
 ## 3.2.5 요구에 의한 변경 [AAA]
 맥락의 변경은 사용자 요청에 의해서만 일어나야 하며, 그러한 변경을 해제할 수 있는 기능을 제공해야 합니다.
@@ -78,7 +78,7 @@ UI 구성 요소가 포커스 상태가 되면, 맥락을 변경하지 않습니
 ### 예시
 - 콘텐츠를 자동으로 업데이트하는 대신 작성자는 콘텐츠 새로 고침을 요청하는 '지금 업데이트' 버튼을 제공합니다.
 - 뉴스를 보여주는 해당 페이지는 실시간으로 업데이트하며 웹 페이지를 보여줬지만, 요구에 의한 변경 성공 기준 적용 후 업데이트를 요청하거나 일시 중지할 수 있는 옵션이 추가되었습니다.<br />
-<img src="./img/change-on-request-1.png" alt="홍콩 사무국 요청에 의한 변경-1" width="400px" /><img src="./img/change-on-request-2.png" alt="홍콩 사무국 요청에 의한 변경-2" width="400px" />
+    <img src="./img/change-on-request-1.png" alt="홍콩 사무국 요청에 의한 변경-1" width="400px" /><img src="./img/change-on-request-2.png" alt="홍콩 사무국 요청에 의한 변경-2" width="400px" />
 
 
 ## 참고 자료

@@ -6,6 +6,6 @@
 
 | 지침                                  | 링크 |
 | :------------------------------------ | :--: |
-| 3.1 가독성 <br /> (Readable)          |  [:mag:](./01-readable/README.md)  |
-| 3.2 예측 가능성 <br> (Predictable     |  [:mag:](./02-predictable/README.md)  |
-| 3.3 입력 지원 <br> (Input Assistance) |  [:mag:](./03-input-assistance/README.md)  |
+| 3.1 가독성 <br /> `Readable`          |  [:mag:](./01-readable/README.md)  |
+| 3.2 예측 가능성 <br> `Predictable`    |  [:mag:](./02-predictable/README.md)  |
+| 3.3 입력 지원 <br> `Input Assistance` |  [:mag:](./03-input-assistance/README.md)  |
