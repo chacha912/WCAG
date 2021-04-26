@@ -37,16 +37,16 @@
 - 보조 기술(스크린 리더, 화면 돋보기, 음성 인식 소프트웨어)과의 호환이 가능합니다.
 
 ### 예시
-- 대한항공 사이트의 경우 div 태그의 역할을 main, radio 등으로 지정하고 있습니다.
-  ![대한항공 좌석 선택](./img/role.png)
+- 대한항공 사이트의 경우 div 태그의 역할을 main, radio 등으로 지정하고 있습니다.<br />
+  ![대한항공 좌석 선택](./img/role.png)<br />
   ``` html
   <!-- 컨네이너라는 별칭을 가진 div 코드-->
   <div _ngcontent-nld-c5="" class="container" role="main"></div>
   <!-- 대한항공 좌석 선택창의 코드-->
   <div role="radio" ...></div>
   ```
-- 대한항공 사이트의 메인 네비게이션 확인 시 'aria-expanded' 속성을 사용하여 상태를 알려줍니다.
-  ![대한항공 좌석 선택](./img/state.png)
+- 대한항공 사이트의 메인 네비게이션 확인 시 'aria-expanded' 속성을 사용하여 상태를 알려줍니다.<br />
+  ![대한항공 좌석 선택](./img/state.png)<br />
   ``` html
   <button type="button" aria-expanded="true" 
     aria-controls="gnb-KE161914981887836-1" ...>공항</button>
@@ -64,8 +64,8 @@ HTML 마크업 언어를 사용하여 구현된 상태 메시지의 경우, 프�
 - 일부 인지 장애가 있는 사용자 
 
 ### 예시
-- 검색 결과에 `role="status"` 속성을 가지고 있는 메시지를 포함하면 스크린 리더가 사용자에게 해당 메시지를 알려줍니다.
-![HARVARD](./img/state-message.png)
+- 검색 결과에 `role="status"` 속성을 가지고 있는 메시지를 포함하면 스크린 리더가 사용자에게 해당 메시지를 알려줍니다.<br />
+![HARVARD](./img/state-message.png)<br />
 
 - 개발자는 스크린리더 사용자에게 상태 메시지를 알리기 위한 ARIA Live를 사용해야 합니다.
   ```html
